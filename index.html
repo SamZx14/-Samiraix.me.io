@@ -1654,6 +1654,21 @@
                     <span class="skill-tag">Urdu - B1</span>
                 </div>
             </div>
+            <div class="skill-category animate-on-scroll">
+                <div class="skill-cat-header">
+                    <div class="skill-icon"><i class="fas fa-user-cog"></i></div>
+                    <div class="skill-cat-title">Soft Skills</div>
+                </div>
+                <div class="skill-items">
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Leadership</span>
+                    <span class="skill-tag">Team Work</span>
+                    <span class="skill-tag">Critical thinking</span>
+                    <span class="skill-tag">Creativity</span>
+                    <span class="skill-tag">Emotional Intelligance</span>
+                    <span class="skill-tag">Work Ethic</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -2201,7 +2216,8 @@
                 typingElement.textContent = currentText.substring(0, charIndex + 1);
                 charIndex++;
             }
-            if (!isDeleting && charIndex === currentText.length) {
+            if (!isDeleting && charIndex === currentText.length) 
+            {
                 isDeleting = true;
                 setTimeout(typeEffect, 2000);
             }
