@@ -1189,23 +1189,91 @@
             border-color: var(--primary);
             transform: translateY(-3px);
         }
-        .social-link.whatsapp:hover { background: #25D366; border-color: #25D366; }
-        .social-link.discord:hover { background: #5865F2; border-color: #5865F2; }
-        .social-link.twitter:hover { background: #1DA1F2; border-color: #1DA1F2; }
-        .social-link.linkedin:hover { background: #0A66C2; border-color: #0A66C2; }
-        .social-link.facebook:hover { background: #1877F2; border-color: #1877F2; }
-        .social-link.instagram:hover { background: #E4405F; border-color: #E4405F; }
-        .social-link.github:hover { background: #333; border-color: #333; }
-        .social-link.codepen:hover { background: #000; border-color: #000; }
-        .social-link.stackoverflow:hover { background: #F48024; border-color: #F48024; }
-        .social-link.kaggle:hover { background: #20BEFF; border-color: #20BEFF; }
-        .social-link.codechef:hover { background: #5B4638; border-color: #5B4638; }
-        .social-link.hackerrank:hover { background: #00EA64; border-color: #00EA64; }
-        .social-link.codeforces:hover { background: #1F8ACB; border-color: #1F8ACB; }
-        .social-link.leetcode:hover { background: #FFA116; border-color: #FFA116; }
-        .social-link.hackerearth:hover { background: #2C3454; border-color: #2C3454; }
-        .social-link.geeksforgeeks:hover { background: #298D46; border-color: #298D46; }
-        .social-link.topcoder:hover { background: #616BD5; border-color: #616BD5; }
+        .social-link.whatsapp:hover 
+        { 
+            background: #25D366; 
+            border-color: #25D366; 
+        }
+        .social-link.discord:hover 
+        { 
+            background: #5865F2; 
+            border-color: #5865F2; 
+        }
+        .social-link.twitter:hover 
+        { 
+            background: #1DA1F2; 
+            border-color: #1DA1F2; 
+        }
+        .social-link.linkedin:hover 
+        { 
+            background: #0A66C2; 
+            border-color: #0A66C2; 
+        }
+        .social-link.facebook:hover 
+        { 
+            background: #1877F2; 
+            border-color: #1877F2; 
+        }
+        .social-link.instagram:hover 
+        { 
+            background: #E4405F; 
+            border-color: #E4405F; 
+        }
+        .social-link.github:hover 
+        { 
+            background: #333; 
+            border-color: #333; 
+        }
+        .social-link.codepen:hover 
+        { 
+            background: #000; 
+            border-color: #000; 
+        }
+        .social-link.stackoverflow:hover 
+        { 
+            background: #F48024; 
+            border-color: #F48024; 
+        }
+        .social-link.kaggle:hover 
+        { 
+            background: #20BEFF; 
+            border-color: #20BEFF; 
+        }
+        .social-link.codechef:hover 
+        { 
+            background: #5B4638; 
+            border-color: #5B4638; 
+        }
+        .social-link.hackerrank:hover 
+        { 
+            background: #00EA64; 
+            border-color: #00EA64; 
+        }
+        .social-link.codeforces:hover 
+        { 
+            background: #1F8ACB; 
+            border-color: #1F8ACB; 
+        }
+        .social-link.leetcode:hover 
+        { 
+            background: #FFA116; 
+            border-color: #FFA116; 
+        }
+        .social-link.hackerearth:hover 
+        { 
+            background: #2C3454; 
+            border-color: #2C3454; 
+        }
+        .social-link.geeksforgeeks:hover 
+        { 
+            background: #298D46; 
+            border-color: #298D46; 
+        }
+        .social-link.topcoder:hover 
+        { 
+            background: #616BD5; 
+            border-color: #616BD5; 
+        }
 
         /* Coding Platforms Section */
         .platforms-section 
@@ -1306,7 +1374,111 @@
             transition: opacity 0.3s;
         }
 
-        /* ===== RESPONSIVE ===== */
+        
+        /* ===== COURSES SECTION ===== */
+        .courses-grid 
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .course-card 
+        {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .course-card::before 
+        {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover::before 
+        {
+            transform: scaleX(1);
+        }
+        .course-card:hover 
+        {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 50px rgba(99, 102, 241, 0.15);
+        }
+        .course-platform 
+        {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.3rem 0.8rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .course-icon 
+        {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+            transition: all 0.3s ease;
+        }
+        .course-card:hover .course-icon 
+        {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 12px 35px rgba(99, 102, 241, 0.5);
+        }
+        .course-info 
+        {
+            width: 100%;
+        }
+        .course-title 
+        {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+        .course-year 
+        {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+        }
+        .course-year i 
+        {
+            color: var(--primary);
+        }
+
+/* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) 
         {
             .hero-content 
@@ -1373,7 +1545,13 @@
                 grid-template-columns: repeat(2, 1fr); 
             }
         }
+    
+        @media (max-width: 768px) {
+            .courses-grid { grid-template-columns: 1fr; }
+        }
+
     </style>
+<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -1393,6 +1571,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#courses">Courses</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#events">Events</a></li>
@@ -1428,7 +1607,11 @@
                         <div class="stat-label">Certificates</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Courses</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3">0</div>
                         <div class="stat-label">Projects</div>
                     </div>
                     <div class="stat-item">
@@ -1730,6 +1913,130 @@
             </div>
         </div>
     </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <div class="section-header animate-on-scroll">
+            <div class="section-label">Continuous Learning</div>
+            <h2 class="section-title">Courses & <span>Certifications</span></h2>
+            <p class="section-desc">Professional courses completed to enhance skills and knowledge</p>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-film"></i></div>
+                <div class="course-info">
+                    <div class="course-title">2D Animation</div>
+                    <a href="https://drive.google.com/file/d/15jfyeLIfjHd0vitgem69DkhSsfQxwIZ_/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-comments"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Arts of Communication</div>
+                    <a href="https://drive.google.com/file/d/1ESkI_U8COo3LWUHeghyzjNm3GwS7d-gr/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-user-tie"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Interview Skill</div>
+                    <a href="https://drive.google.com/file/d/1T-fJrhP5xqGovl4KAIlAk_b552Yq9Z1S/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-file-alt"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Smart CV</div>
+                    <a href="https://drive.google.com/file/d/1P9H9w8LcEXBBmr5drs0K2M8T1MbAlL2P/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fab fa-linkedin"></i></div>
+                <div class="course-info">
+                    <div class="course-title">LinkedIn 101</div>
+                    <a href="https://drive.google.com/file/d/1CmxaBXnlsndCzrVy7ds8xVgthlFu9Sx3/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Corporate Presentation Skill</div>
+                    <a href="https://drive.google.com/file/d/1irc1Xyhci8VEIGyClQVj2nvyM2PenH6N/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Canva for Presentation</div>
+                    <a href="https://drive.google.com/file/d/15sVoI12Yabl7zc4pO1GG5_GmnIS6BbbA/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-table"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Project Based Excel</div>
+                    <a href="https://drive.google.com/file/d/1CkTNGUaXuQvPQQERdy0H-1fQajocxe_3/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-theater-masks"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Acting Aptitude</div>
+                    <a href="https://drive.google.com/file/d/12BR3VUyKHrYAbDJ8qWgMS-8cYcZNfB0v/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">GP Academy</div>
+                <div class="course-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Online Safety</div>
+                    <a href="https://drive.google.com/file/d/1FmO_SgUtwJJPzPXaO7714SVM9kXf1vt9/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">SoloLearn</div>
+                <div class="course-icon"><i class="fas fa-code"></i></div>
+                <div class="course-info">
+                    <div class="course-title">C++ Programming</div>
+                    <a href="https://drive.google.com/file/d/1KFqpr2FybDbXU2C7bqw6FgbRYytrXCRB/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">HP LIFE</div>
+                <div class="course-icon"><i class="fas fa-robot"></i></div>
+                <div class="course-info">
+                    <div class="course-title">AI for Beginners</div>
+                    <a href="https://drive.google.com/file/d/1UHNiHMb0znfoWpDQzXgQksDI6XSd1f8V/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">BitDegree Learn</div>
+                <div class="course-icon"><i class="fas fa-cube"></i></div>
+                <div class="course-info">
+                    <div class="course-title">NFT: Domain Web 3 Identity</div>
+                    <a href="https://drive.google.com/file/d/1Cr7gkvb8b97_CiyC_hyQcT4zqUy1RcSX/view?usp=drivesdk" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+            <div class="course-card animate-on-scroll">
+                <div class="course-platform">BitDegree Learn</div>
+                <div class="course-icon"><i class="fas fa-cube"></i></div>
+                <div class="course-info">
+                    <div class="course-title">Solidity with Space Doggo</div>
+                    <a href="https://drive.google.com/file/d/1d_NBzfyfLiozW3d6-q9euust12qg8Url/view?usp=driv" target="_blank" class="cert-btn"><i class="fas fa-eye"></i> View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Projects Section -->
     <section id="projects">
