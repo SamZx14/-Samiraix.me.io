@@ -11,23 +11,31 @@
     <style>
         :root 
         {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --secondary: #ec4899;
-            --accent: #06b6d4;
-            --dark: #0f172a;
-            --darker: #020617;
-            --card: #1e293b;
-            --text: #f1f5f9;
-            --text-muted: #94a3b8;
-            --border: #334155;
-            --success: #10b981;
-            --warning: #f59e0b;
+            --primary: #facc15;
+            --primary-dark: #eab308;
+            --secondary: #f97316;
+            --accent: #fb923c;
+            --dark: #0a0a0a;
+            --darker: #000000;
+            --card: #111111;
+            --text: #ffffff;
+            --text-muted: #a3a3a3;
+            --border: #262626;
+            --success: #22c55e;
+            --warning: #f97316;
             --danger: #ef4444;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        * 
+        { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        html 
+        { 
+            scroll-behavior: smooth; 
+        }
 
         body 
         {
@@ -38,8 +46,14 @@
             line-height: 1.6;
         }
 
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--darker); }
+        ::-webkit-scrollbar 
+        { 
+            width: 8px; 
+        }
+        ::-webkit-scrollbar-track 
+        { 
+            background: var(--darker); 
+        }
         ::-webkit-scrollbar-thumb 
         {
             background: linear-gradient(180deg, var(--primary), var(--secondary));
@@ -83,7 +97,10 @@
             cursor: pointer;
             transition: transform 0.3s;
         }
-        .logo:hover { transform: scale(1.05); }
+        .logo:hover 
+        { 
+            transform: scale(1.05); 
+        }
         .nav-links 
         {
             display: flex;
@@ -111,9 +128,18 @@
             background: linear-gradient(90deg, var(--primary), var(--secondary));
             transition: width 0.3s ease;
         }
-        .nav-links a:hover { color: var(--text); }
-        .nav-links a:hover::after { width: 100%; }
-        .nav-cta { display: flex; gap: 1rem; }
+        .nav-links a:hover 
+        { 
+            color: var(--text); 
+        }
+        .nav-links a:hover::after 
+        { 
+            width: 100%; 
+        }
+        .nav-cta 
+        { 
+            display: flex; gap: 1rem; 
+        }
 
         .btn 
         {
@@ -194,7 +220,10 @@
             gap: 4rem;
             align-items: center;
         }
-        .hero-left { z-index: 2; }
+        .hero-left 
+        { 
+            z-index: 2; 
+        }
         .hero-badge 
         {
             display: inline-flex;
@@ -252,7 +281,8 @@
             margin-bottom: 1.5rem;
             min-height: 2rem;
         }
-        .hero-desc {
+        .hero-desc 
+        {
             font-size: 1.1rem;
             color: var(--text-muted);
             margin-bottom: 2rem;
@@ -264,7 +294,10 @@
             gap: 2rem;
             margin-bottom: 2rem;
         }
-        .stat-item { text-align: center; }
+        .stat-item 
+        { 
+            text-align: center; 
+        }
         .stat-number 
         {
             font-size: 2rem;
@@ -479,9 +512,18 @@
             animation: fadeInLeft 0.6s ease forwards;
             opacity: 0;
         }
-        .timeline-item:nth-child(1) { animation-delay: 0.1s; }
-        .timeline-item:nth-child(2) { animation-delay: 0.2s; }
-        .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+        .timeline-item:nth-child(1) 
+        { 
+            animation-delay: 0.1s; 
+        }
+        .timeline-item:nth-child(2) 
+        { 
+            animation-delay: 0.2s; 
+        }
+        .timeline-item:nth-child(3) 
+        { 
+            animation-delay: 0.3s; 
+        }
         .timeline-dot 
         {
             position: absolute;
@@ -517,7 +559,10 @@
             transform-origin: left;
             transition: transform 0.3s ease;
         }
-        .timeline-card:hover::before { transform: scaleX(1); }
+        .timeline-card:hover::before 
+        { 
+            transform: scaleX(1); 
+        }
         .timeline-card:hover 
         {
             transform: translateX(10px);
@@ -594,7 +639,10 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
-        .exp-card:hover::after { opacity: 1; }
+        .exp-card:hover::after 
+        { 
+            opacity: 1; 
+        }
         .exp-card:hover 
         {
             transform: translateY(-8px);
@@ -662,7 +710,10 @@
             gap: 0.3rem;
             transition: gap 0.3s;
         }
-        .exp-link:hover { gap: 0.6rem; }
+        .exp-link:hover 
+        { 
+            gap: 0.6rem; 
+        }
 
         /* ===== SKILLS SECTION ===== */
         .skills-container 
@@ -786,7 +837,10 @@
             0% { transform: translate(-50%, -50%); }
             100% { transform: translate(0, 0); }
         }
-        .cert-info { padding: 1.5rem; }
+        .cert-info 
+        { 
+            padding: 1.5rem; 
+        }
         .cert-title 
         {
             font-size: 1.1rem;
@@ -857,7 +911,10 @@
             font-size: 0.85rem;
             font-weight: 600;
         }
-        .project-body { padding: 1.5rem 2rem; }
+        .project-body 
+        { 
+            padding: 1.5rem 2rem; 
+        }
         .project-focus 
         {
             color: var(--text-muted);
@@ -892,7 +949,10 @@
             color: var(--text-muted);
             font-size: 0.85rem;
         }
-        .project-links { display: flex; gap: 1rem; }
+        .project-links 
+        { 
+            display: flex; gap: 1rem; 
+        }
         .project-link 
         {
             padding: 0.5rem 1rem;
@@ -907,7 +967,10 @@
             background: var(--primary);
             color: white;
         }
-        .project-link.primary:hover { background: var(--primary-dark); }
+        .project-link.primary:hover 
+        { 
+            background: var(--primary-dark); 
+        }
         .project-link.secondary 
         {
             background: transparent;
@@ -998,8 +1061,14 @@
             transform: translateY(-5px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
         }
-        .contact-box.message:hover { border-color: var(--primary); }
-        .contact-box.contact:hover { border-color: var(--secondary); }
+        .contact-box.message:hover 
+        { 
+            border-color: var(--primary); 
+        }
+        .contact-box.contact:hover 
+        { 
+            border-color: var(--secondary); 
+        }
         .contact-icon 
         {
             width: 60px;
@@ -1055,7 +1124,10 @@
             min-height: 120px;
             resize: vertical;
         }
-        .contact-info-list { list-style: none; }
+        .contact-info-list 
+        { 
+            list-style: none; 
+        }
         .contact-info-list li 
         {
             display: flex;
@@ -1064,7 +1136,10 @@
             padding: 1rem 0;
             border-bottom: 1px solid var(--border);
         }
-        .contact-info-list li:last-child { border-bottom: none; }
+        .contact-info-list li :last-child 
+        { 
+            border-bottom: none; 
+        }
         .contact-info-list i 
         {
             width: 40px;
@@ -1167,7 +1242,8 @@
             background-clip: text;
             margin-bottom: 0.5rem;
         }
-        .footer-copy {
+        .footer-copy 
+        {
             color: var(--text-muted);
             font-size: 0.9rem;
         }
@@ -1233,24 +1309,69 @@
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) 
         {
-            .hero-content { grid-template-columns: 1fr; text-align: center; }
-            .hero-left { order: 2; }
-            .hero-right { order: 1; }
-            .hero-stats { justify-content: center; }
-            .hero-cta { justify-content: center; }
-            .contact-wrapper { grid-template-columns: 1fr; }
-            .projects-grid { grid-template-columns: 1fr; }
-            .social-grid { grid-template-columns: repeat(3, 1fr); }
+            .hero-content 
+            { 
+                grid-template-columns: 1fr; text-align: center; 
+            }
+            .hero-left 
+            { 
+                order: 2; 
+            }
+            .hero-right 
+            { 
+                order: 1; 
+            }
+            .hero-stats 
+            { 
+                justify-content: center; 
+            }
+            .hero-cta 
+            { 
+                justify-content: center; 
+            }
+            .contact-wrapper 
+            { 
+                grid-template-columns: 1fr; 
+            }
+            .projects-grid 
+            { 
+                grid-template-columns: 1fr; 
+            }
+            .social-grid 
+            { 
+                grid-template-columns: repeat(3, 1fr); 
+            }
         }
         @media (max-width: 768px) 
         {
-            .nav-links { display: none; }
-            .hero-title { font-size: 2.5rem; }
-            .section-title { font-size: 2rem; }
-            .experience-grid { grid-template-columns: 1fr; }
-            .skills-container { grid-template-columns: 1fr; }
-            .certs-grid { grid-template-columns: 1fr; }
-            .social-grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-links 
+            { 
+                display: none; 
+            }
+            .hero-title 
+            { 
+                font-size: 2.5rem; 
+            }
+            .section-title 
+            { 
+                font-size: 2rem; 
+            }
+            .experience-grid 
+            { 
+                grid-template-columns: 1fr; 
+            }
+            .skills-container 
+            { 
+                grid-template-columns: 1fr; 
+            }
+            .certs-grid 
+            { 
+                grid-template-columns: 1fr; 
+            }
+            .social-grid 
+            { 
+                grid-template-columns: repeat(2, 1fr); 
+            }
         }
     </style>
 <base target="_blank">
@@ -1273,6 +1394,8 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-cta">
@@ -1291,7 +1414,7 @@
                     Available for Opportunities
                 </div>
                 <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Samira Ibrahim</span>
+                    Assalamualaikum, I'm <span class="gradient-text">Samira Ibrahim</span>
                 </h1>
                 <p class="hero-subtitle">BSc in Computer Science & Engineering</p>
                 <p class="hero-desc">
@@ -1314,12 +1437,8 @@
                     </div>
                 </div>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i> View Projects
-                    </a>
-                    <a href="https://github.com/SamZx14" target="_blank" class="btn btn-outline">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+                    <a href="https://github.com/SamZx14" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="hero-right">
@@ -1357,9 +1476,9 @@
                     <div class="timeline-school">Bangladesh University of Business and Technology (BUBT)</div>
                     <div class="timeline-meta">
                         <span><i class="fas fa-map-marker-alt"></i> Mirpur 2, Rupnagar, Dhaka-1216</span>
-                        <span><i class="fas fa-calendar"></i> June 2024 - December 2028</span>
+                        <span><i class="fas fa-calendar"></i> June 2024 - Present (December 2028)</span>
                     </div>
-                    <div class="gpa-badge"><i class="fas fa-star"></i> CGPA: 3.17</div>
+                    <div class="gpa-badge"><i class="fas fa-star"></i> CGPA: 3.24</div>
                 </div>
             </div>
             <div class="timeline-item">
@@ -1369,7 +1488,7 @@
                     <div class="timeline-school">Agrani School and College</div>
                     <div class="timeline-meta">
                         <span><i class="fas fa-map-marker-alt"></i> Azimpur, Dhaka-1205</span>
-                        <span><i class="fas fa-calendar"></i> January 2021 - December 2023</span>
+                        <span><i class="fas fa-calendar"></i> April 2021 - December 2023</span>
                     </div>
                     <div class="gpa-badge"><i class="fas fa-star"></i> GPA: 4.42</div>
                 </div>
@@ -1450,8 +1569,12 @@
                     <div class="skill-cat-title">Languages & Frameworks</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span>
-                    <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
                 </div>
             </div>
             <div class="skill-category animate-on-scroll">
@@ -1460,8 +1583,11 @@
                     <div class="skill-cat-title">Database & Backend</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">MySQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">MariaDB</span>
-                    <span class="skill-tag">Linux</span><span class="skill-tag">Apache</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MariaDB</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Apache</span>
                 </div>
             </div>
             <div class="skill-category animate-on-scroll">
@@ -1470,9 +1596,14 @@
                     <div class="skill-cat-title">Tools & DevOps</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">GitHub</span><span class="skill-tag">GitLab</span><span class="skill-tag">GitLens</span>
-                    <span class="skill-tag">Git</span><span class="skill-tag">Docker</span><span class="skill-tag">Docker Hub</span>
-                    <span class="skill-tag">VMware</span><span class="skill-tag">VirtualBox</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">GitLab</span>
+                    <span class="skill-tag">GitLens</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Docker Hub</span>
+                    <span class="skill-tag">VMware</span>
+                    <span class="skill-tag">VirtualBox</span>
                 </div>
             </div>
             <div class="skill-category animate-on-scroll">
@@ -1481,7 +1612,10 @@
                     <div class="skill-cat-title">IDE & Editors</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">VS Code</span><span class="skill-tag">XAMPP</span><span class="skill-tag">PyCharm</span><span class="skill-tag">Figma</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">XAMPP</span>
+                    <span class="skill-tag">PyCharm</span>
+                    <span class="skill-tag">Figma</span>
                 </div>
             </div>
             <div class="skill-category animate-on-scroll">
@@ -1490,8 +1624,10 @@
                     <div class="skill-cat-title">Office & Productivity</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">MS Word</span><span class="skill-tag">MS Excel</span>
-                    <span class="skill-tag">MS PowerPoint</span><span class="skill-tag">Canva</span>
+                    <span class="skill-tag">MS Word</span>
+                    <span class="skill-tag">MS Excel</span>
+                    <span class="skill-tag">MS PowerPoint</span>
+                    <span class="skill-tag">Canva</span>
                 </div>
             </div>
             <div class="skill-category animate-on-scroll">
@@ -1500,8 +1636,10 @@
                     <div class="skill-cat-title">Core Concepts</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">OOP</span><span class="skill-tag">Data Structures</span>
-                    <span class="skill-tag">Algorithms</span><span class="skill-tag">Operating System</span>
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">Data Structures</span>
+                    <span class="skill-tag">Algorithms</span>
+                    <span class="skill-tag">Operating System</span>
                 </div>
             </div>
             <div class="skill-category animate-on-scroll">
@@ -1510,7 +1648,10 @@
                     <div class="skill-cat-title">Languages</div>
                 </div>
                 <div class="skill-items">
-                    <span class="skill-tag">English - C2</span><span class="skill-tag">Bangla - C2</span><span class="skill-tag">Hindi - B2</span><span class="skill-tag">Urdu - B1</span>
+                    <span class="skill-tag">English - C2</span>
+                    <span class="skill-tag">Bangla - C2</span>
+                    <span class="skill-tag">Hindi - B2</span>
+                    <span class="skill-tag">Urdu - B1</span>
                 </div>
             </div>
         </div>
